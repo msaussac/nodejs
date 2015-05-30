@@ -4,4 +4,4 @@ CMD ["git", "clone",  "https://github.com/msaussac/nodejs.git"]
 
 CDM ["node", "./www/bin"]
 
-EXPOSE 3000
+EXPOSE 3000 
