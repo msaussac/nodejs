@@ -4,6 +4,6 @@ run git clone https://github.com/msaussac/nodejs.git
 
 RUN npm install
 
-RUN node ./bin/www
+ENTRYPOINT ["node", "./bin/www"]
 
 EXPOSE 3000  
