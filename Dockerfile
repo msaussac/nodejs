@@ -1,7 +1,9 @@
 FROM node:0.10-onbuild
 
-CMD ["git", "clone",  "https://github.com/msaussac/nodejs.git"]
+run git clone https://github.com/msaussac/nodejs.git
 
-CDM ["node", "./www/bin"]
+RUN npm install
+
+RUN node ./bin/www
 
 EXPOSE 3000  
